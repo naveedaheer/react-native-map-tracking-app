@@ -1,0 +1,3 @@
+rootProject.name = 'MapTrackingApp'
+
+include ':app'
