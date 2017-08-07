@@ -20,8 +20,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flex: 1
   },
-  mapView: {
-    ...StyleSheet.absoluteFillObject
+  map: {
+        ...StyleSheet.absoluteFillObject,
+    // position: 'absolute',
+    // top: 0,
+    // left: 0,
+    // right: 0,
+    // bottom: 0,
   }
 });
 
@@ -42,7 +47,7 @@ export default class MapTrackingApp extends Component {
   render() {
     return (
       <View style={{ flex: 1 }}>
-        <MapView style={styles.mapView}
+        <MapView style={styles.map}
           /*initialRegion={{
             latitude: 24.53,
             longitude: 67.00,
