@@ -48,12 +48,15 @@ export default class MapTrackingApp extends Component {
     return (
       <View style={{ flex: 1 }}>
         <MapView style={styles.map}
-          /*initialRegion={{
-            latitude: 24.53,
-            longitude: 67.00,
-            latitudeDelta: 0.02,
-            longitudeDelta: 0.02,
-          }}*/
+          initialRegion={{
+            latitude: 24.8615,
+            longitude: 67.0099,
+            latitudeDelta: 0.06,
+            longitudeDelta: 0.06,
+          }}
+          showsUserLocation={true}
+          showsMyLocationButton={true}
+          zoomEnabled={true}
         />
         <View style={styles.infoWrapper} >
           <RunInfoNumeric
